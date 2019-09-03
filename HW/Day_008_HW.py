@@ -31,7 +31,7 @@ app_train = pd.read_csv(f_app_train)
 
 
 import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
+
 
 
 # ## 練習時間
@@ -46,7 +46,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # - [pandas 中的繪圖函數](https://amaozhao.gitbooks.io/pandas-notebook/content/pandas%E4%B8%AD%E7%9A%84%E7%BB%98%E5%9B%BE%E5%87%BD%E6%95%B0.html)
 # 
 
-# In[ ]:
+# plot
 
 
 
