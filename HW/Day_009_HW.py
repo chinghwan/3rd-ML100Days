@@ -54,7 +54,7 @@ dtype_select = ['float64', 'int64']
 #numeric_columns = list(app_train.columns[list(app_train.dtypes.isin(dtype_select))])
 
 
-numeric_columns = list(app_train.columns[list(app_train.dtypes.isin(dtype_select))])
+numeric_columns = list(app_train.columns[list(app_train.dtypes=='float64')])
 print("Numbers of remain columns:" + str(len(numeric_columns)))
 # 再把只有 2 值 (通常是 0,1) 的欄位去掉
 numeric_columns = list(app_train[numeric_columns].columns[list(app_train[numeric_columns].apply(lambda x:len(x.unique())!=2 ))])
