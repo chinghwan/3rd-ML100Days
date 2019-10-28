@@ -199,7 +199,7 @@ meta_estimator = GradientBoostingClassifier(tol=100, subsample=0.70, n_estimator
 """
 Your Code Here
 """
-stacking = StackingClassifier(classifiers=[gdbt, rf], meta_classifier=meta_estimator)
+stacking = StackingClassifier(classifiers=[lr,gdbt, rf], meta_classifier=meta_estimator)
 
 # In[ ]:
 
@@ -207,7 +207,7 @@ stacking = StackingClassifier(classifiers=[gdbt, rf], meta_classifier=meta_estim
 stacking.fit(train_X, train_Y)
 stacking_pred = stacking.predict(test_X)
 sub = pd.DataFrame({'PassengerId': ids, 'Survived': stacking_pred})
-sub.to_csv('titanic_stacking.csv', index=False)
+sub.to_csv('titanic_stacking_2.csv', index=False)
 
 
 # In[ ]:
