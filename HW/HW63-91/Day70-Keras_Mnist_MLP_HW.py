@@ -151,7 +151,7 @@ def show_train_history(train_history,train,validation):
 # In[19]:
 
 
-show_train_history(train_history,'acc','val_acc')
+show_train_history(train_history,'accuracy','val_accuracy')
 
 
 # In[20]:
